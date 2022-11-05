@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins, sans-serif;';
+    background: #ffbdc9;
+}
+h1 {
+    font-size: 50px;
+    text-align: left;
+    color: #777;
+    text-indent: 20px;
+
+}
+p {
+    font-size: 30px;
+   text-align: center;
+   color: #777;
+}
+p.dline {
+    line-height: 5;
+}
+p {
+    line-height: 0.9 em;
+}
+
+hr {
+    border: none;
+    background-color:palevioletred;
+    color:palevioletred;
+    height: 4px;
+}
+
+*{
+    display: 1px;
+    box-sizing: border-box;
+    font-family: 'Poppins,sans-serif;';
+}
+.conteyner {
+    background: #ffbdc9;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+
+}
+
+nav {
+        background: #fff;
+        border-radius: 50px;
+
+        box-shadow: 0 25px 20px -29px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+    
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 13px 35px;
+        margin: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #777;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: color 0.5s;
+       
+    }
+    
+    nav ul li::after {
+        content: '';
+       background-color: #F893D3;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        position: absolute;
+        top: 100%;
+        Left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0;
+        transition: top 0.5s, opasity 0.5s;
+    }
+    
+    nav ul li:hover {
+        color: #fff;
+    }
+    
+    nav ul li:hover::after {
+        top: 50%;
+        opacity: 1;
+    }
+
+img {
+    border-radius: 50px;
+    width: 600px;
+    background: #ffbdc9;
+
+} 
+.center-img {
+   display: block;
+   margin: 0 auto;
+}
+
+.rightimg {
+    float: right;
+    width: 300px;
+    margin: 0 auto;
+}
+a
+{
+    text-decoration: none;
+    color: gray;
+     border-radius: 30px;
+    
+}
+.content-list
+{
+    list-style-type: none;
+
+}
+.block-main
+{
+    background: white;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 30px;
+}
+.block-right
+{
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.block-left
+{
+    padding-left: 30px; 
+
+}
+.left-title
+    {
+        padding-bottom: 20px;
+    }
+  
+.content-text
+    {
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: black;
+    }
+    h3 {
+        text-align: justify;
+        padding-right: 30px; 
+    }
